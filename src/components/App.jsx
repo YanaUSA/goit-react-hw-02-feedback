@@ -19,30 +19,6 @@ export class App extends Component {
     });
   };
 
-  // goodFeedbackCount = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       good: prevState.good + 1,
-  //     };
-  //   });
-  // };
-
-  // neutralFeedbackCount = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       neutral: prevState.neutral + 1,
-  //     };
-  //   });
-  // };
-
-  // badFeedbackCount = () => {
-  //   this.setState(prevState => {
-  //     return {
-  //       bad: prevState.bad + 1,
-  //     };
-  //   });
-  // };
-
   countTotalFeedback = () => {
     return this.state.good + this.state.neutral + this.state.bad;
   };
