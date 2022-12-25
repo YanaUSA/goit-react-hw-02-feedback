@@ -32,6 +32,8 @@ export class App extends Component {
   };
 
   render() {
+    const noFeedback = this.countTotalFeedback();
+
     return (
       <>
         <Section title="Please leave feedback">
@@ -40,7 +42,7 @@ export class App extends Component {
             onLeaveFeedback={this.feedbackCount}
           />
         </Section>
-        {this.countTotalFeedback() ? (
+        {noFeedback ? (
           <Section title="Statistics">
             <Statistics
               good={this.state.good}
